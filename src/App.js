@@ -1,28 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Dashboard from "./Components/Dashboard/Dashboard";
+import {Routes, Route, Link, useLocation} from "react-router-dom";
+import NavBar from "./Components/NavBar/NavBar";
+import {AnimatePresence} from "framer-motion";
+import AnimatedRoutes from "./Components/AnimatedRoutes/AnimatedRoutes";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          The Caro Simple website has arrived
-        </p>
-        <h1>
-          Prepare your ass
-        </h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-
-        </a>
-      </header>
-    </div>
-  );
+    const location = useLocation();
+    return (
+        <div>
+            <NavBar />
+            <AnimatedRoutes />
+        </div>
+    );
 }
 
 export default App;

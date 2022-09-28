@@ -1,0 +1,16 @@
+.navItem{
+    text-decoration: none;
+    color: grey;
+    margin: 15px;
+    font-weight: bold;
+}
+
+
+.shadow:hover{
+    filter: drop-shadow(7px 7px 7px #666666);
+    transition: filter 0.4s;
+}
+
+.shadow{
+    transition: filter 0.4s;
+}
