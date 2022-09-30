@@ -1,13 +1,10 @@
 import React from 'react';
-import {useState} from "react";
 import {NavLink} from "react-router-dom";
-import Dashboard from "../Dashboard/Dashboard";
 import './NavBar.css'; // Tell webpack that Button.js uses these styles
 import simpleCaroLogo from "../../SimpleCaroLogo.png"
-import {Grid,Button} from "@mui/material";
+import {Button, Grid} from "@mui/material";
 
 function NavBar() {
-    const [isShown, setIsShown] = useState(false);
 
     return (
         <Grid container style={{
@@ -23,7 +20,7 @@ function NavBar() {
                         paddingLeft: "10vw",
                         filter: "drop-shadow(5px 6px 6px #66666)"
                     }}
-                         className="shadow"/>
+                         className="shadow" alt="alternative"/>
                 </NavLink>
             </Grid>
             <Grid container xs={6} xm={1} xl={1} style={{alignSelf: "center", fontWeight: "bold"}}>

@@ -1,5 +1,5 @@
 import Dashboard from "../Dashboard/Dashboard";
-import {Routes, Route, Link, useLocation} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import {AnimatePresence} from 'framer-motion'
 
 function AnimatedRoutes() {
