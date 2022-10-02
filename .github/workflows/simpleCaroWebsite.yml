@@ -23,6 +23,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Dependencies
         run: |
+          node -v
           npm ci
       - name: build
         run: |
