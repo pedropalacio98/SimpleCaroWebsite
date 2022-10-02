@@ -26,7 +26,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Dependencies
         run: |
-          npm install
+          rm -rf node_modules/
+          npm ci
       - name: build
         run: |
           npm run build
+          env:
+            CI: ""
