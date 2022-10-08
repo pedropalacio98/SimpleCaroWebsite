@@ -9,7 +9,7 @@ const Ideas = () => (
     >
         <header className="App-header">
             <h3>
-                These are our current ideas: 
+                Current ideas: 
             </h3>
             <ol style={{color: 'gray'}}>
                 <li>Blog explore CERN surroundings</li> 
@@ -20,9 +20,6 @@ const Ideas = () => (
                 <li>Investment dashboard</li> 
                 <li>Teach people how to code a website</li> 
             </ol>
-            <h3>
-                These are our current ideas: 
-            </h3>
         </header>
     </motion.div>
 );
