@@ -13,7 +13,7 @@ const Dashboard = () => (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo"/>
             <h3>
-                This project is being deployed automatically(?)
+                This Franco is being deployed automatically(?)
             </h3>
             <h3 style={{color: 'gray'}}>
                 CERN is raising funds for this poor guy
