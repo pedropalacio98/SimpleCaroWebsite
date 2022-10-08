@@ -8,7 +8,7 @@ function NavBar() {
 
     return (
         <Grid container style={{
-            background: "linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)",
+            background: "conic-gradient(from 90deg, #000 , #ff9800)",
             fontFamily: "roboto",
             fontSize: "30px",
         }}>
