@@ -12,7 +12,7 @@ function NavBar() {
             fontFamily: "roboto",
             fontSize: "30px",
         }}>
-            <Grid item xs={6} xm={1} xl={1} style={{vw: "100vw", maxHeight: "20vh"}}>
+            <Grid item xs={6} xm={6} xl={6} style={{vw: "100vw", maxHeight: "20vh"}}>
                 <NavLink to="/">
                     <img src={simpleCaroLogo} style={{
                         maxHeight: "100%",
@@ -23,20 +23,20 @@ function NavBar() {
                          className="shadow" alt="alternative"/>
                 </NavLink>
             </Grid>
-            <Grid container xs={6} xm={1} xl={1} style={{alignSelf: "center", fontWeight: "bold"}}>
+            <Grid container xs={6} xm={1} xl={6} style={{alignSelf: "center", fontWeight: "bold"}}>
                 <Grid item xs={4} xm={1}>
-                    <NavLink to="/first" className="navItem" >
-                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>First</Button>
+                    <NavLink to="/Ideas" className="navItem" >
+                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Ideas</Button>
                     </NavLink>
                 </Grid>
                 <Grid item xs={4}>
-                    <NavLink to="/second" className="navItem" >
-                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Second</Button>
+                    <NavLink to="/Pictures" className="navItem" >
+                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Pictures</Button>
                     </NavLink>
                 </Grid>
                 <Grid item xs={4}>
-                    <NavLink to="/third" className="navItem">
-                        <Button variant="text" style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Third</Button>
+                    <NavLink to="/Contacts" className="navItem">
+                        <Button variant="text" style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Contact</Button>
                     </NavLink>
                 </Grid>
             </Grid>

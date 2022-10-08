@@ -5,7 +5,7 @@ import pedrito from "../../pedro.jpg";
 import {motion} from "framer-motion";
 
 const Dashboard = () => (
-    <motion.div className="App"
+     <motion.div className="App"
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 exit={{opacity: 0}}
@@ -13,7 +13,8 @@ const Dashboard = () => (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo"/>
             <h3>
-                This project is being deployed automatically(?)
+                This project is being deployed automatically
+                This is being runned in Macbook
             </h3>
             <h3 style={{color: 'gray'}}>
                 CERN is raising funds for this poor guy
