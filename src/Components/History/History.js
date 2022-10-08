@@ -1,6 +1,5 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import {Grid, Paper} from "@mui/material"
 
 const History = () => (
     <motion.div className="App"
