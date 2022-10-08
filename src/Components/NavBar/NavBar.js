@@ -1,42 +1,55 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React from 'react'
+import {NavLink} from "react-router-dom"
 import './NavBar.css'; // Tell webpack that Button.js uses these styles
-import simpleCaroLogo from "../../SimpleCaroLogo.png"
-import {Button, Grid} from "@mui/material";
+import SN from "../../SN.png"
+import {Button, Grid} from "@mui/material"
+import randomColor from 'randomcolor';
+const my_color = randomColor()
+
 
 function NavBar() {
 
     return (
         <Grid container style={{
-            background: "conic-gradient(from 90deg, #000 , #ff9800)",
+            background: "conic-gradient(from 90deg, #222222 , "+my_color+")",
             fontFamily: "roboto",
             fontSize: "30px",
+            alignItems: "baseline",
+            spacing: "24"
         }}>
-            <Grid item xs={6} xm={6} xl={6} style={{vw: "100vw", maxHeight: "20vh"}}>
+            <Grid item xs={6} xm={6} xl={6} style={{vw: "10vw", maxHeight: "20vh",alignSelf:"bottom"}} >
                 <NavLink to="/">
-                    <img src={simpleCaroLogo} style={{
+                    <img src={SN} style={{
+                        width: "200px",
                         maxHeight: "100%",
                         maxWidth: "100%",
-                        paddingLeft: "10vw",
-                        filter: "drop-shadow(5px 6px 6px #66666)"
+                        paddingLeft: "1vw",
                     }}
                          className="shadow" alt="alternative"/>
                 </NavLink>
             </Grid>
-            <Grid container xs={6} xm={1} xl={6} style={{alignSelf: "center", fontWeight: "bold"}}>
-                <Grid item xs={4} xm={1}>
+            <Grid container xs={6} xm={6} xl={6} style={{alignSelf: "center", fontWeight: "bold",textTransform: "capitalize"}}>
+                <Grid item xs={12}> {/*This one was supposed to be an empty cell. But stupid react doesn't render it unless it contains smt. So I placed a dot*/}
+                    .
+                </Grid>
+                <Grid item xs={3} xm={1}>
                     <NavLink to="/Ideas" className="navItem" >
-                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Ideas</Button>
+                        <Button variant="text"  style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize", }}>Ideas</Button>
                     </NavLink>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     <NavLink to="/Pictures" className="navItem" >
-                        <Button variant="text"  style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Pictures</Button>
+                        <Button variant="text"  style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Pictures</Button>
                     </NavLink>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
+                    <NavLink to="/History" className="navItem">
+                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>History</Button>
+                    </NavLink>
+                </Grid>
+                <Grid item xs={3}>
                     <NavLink to="/Contacts" className="navItem">
-                        <Button variant="text" style={{fontWeight: "bold",color: "black",fontSize: "1.5rem"}}>Contact</Button>
+                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Contact</Button>
                     </NavLink>
                 </Grid>
             </Grid>
