@@ -17,11 +17,11 @@ function NavBar() {
             alignItems: "baseline",
             spacing: "24"
         }}>
-            <Grid item xs={6} xm={6} xl={6} style={{vw: "10vw", maxHeight: "20vh",alignSelf:"bottom"}} >
+            <Grid item xs={6} xm={6} xl={6} style={{vw: "10vw", maxHeight: "20vh",alignSelf:"center"}} >
                 <NavLink to="/">
                     <img src={SN} style={{
                         width: "200px",
-                        maxHeight: "100%",
+                        maxHeight: "80%",
                         maxWidth: "100%",
                         paddingLeft: "1vw",
                     }}
@@ -43,13 +43,13 @@ function NavBar() {
                     </NavLink>
                 </Grid>
                 <Grid item xs={3}>
-                    <NavLink to="/History" className="navItem">
-                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>History</Button>
+                    <NavLink to="/Contact" className="navItem">
+                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Contact</Button>
                     </NavLink>
                 </Grid>
                 <Grid item xs={3}>
-                    <NavLink to="/Contacts" className="navItem">
-                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Contact</Button>
+                    <NavLink to="/History" className="navItem">
+                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>History</Button>
                     </NavLink>
                 </Grid>
             </Grid>

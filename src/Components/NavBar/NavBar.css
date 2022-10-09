@@ -7,10 +7,10 @@
 
 
 .shadow:hover{
-    filter: drop-shadow(7px 7px 7px #666666);
-    transition: filter 0.4s;
+    filter: drop-shadow(6px 1px 4px black);
+    transition: filter 0.1s;
 }
 
 .shadow{
-    transition: filter 0.4s;
+    transition:  filter 0.4s;
 }

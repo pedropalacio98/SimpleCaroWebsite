@@ -19,17 +19,19 @@ const Dashboard = () => (
                 CERN is raising funds for this poor guy
             </h3>
         </header>
-        <div>
+        <div style={{backgroundColor: "white"}}>
             <div>
-                <h1 style={{margin: 0}}>
-                    We introduce you:
-                </h1>
-                <h1> Pedro Palacio</h1>
-                <p style={{fontSize: 16}}>More info on how to donate soon..</p>
-                {new Date().toLocaleTimeString()}
+                <div>
+                    <h1 style={{margin: 0}}>
+                        We introduce you:
+                    </h1>
+                    <h1> Pedro Palacio</h1>
+                    <p style={{fontSize: 16}}>More info on how to donate soon..</p>
+                    {new Date().toLocaleTimeString()}
+                </div>
             </div>
+            <img src={pedrito} alt="fireSpot"/>
         </div>
-        <img src={pedrito} alt="fireSpot"/>
     </motion.div>
 );
 export default Dashboard;
