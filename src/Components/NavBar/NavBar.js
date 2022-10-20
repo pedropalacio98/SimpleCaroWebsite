@@ -25,12 +25,11 @@ function NavBar() {
                         maxWidth: "100%",
                         paddingLeft: "1vw",
                     }}
-                         className="shadow" alt="alternative"/>
+                         className="shad" alt="alternative"/>
                 </NavLink>
             </Grid>
             <Grid container xs={6} xm={6} xl={6} style={{alignSelf: "center", fontWeight: "bold",textTransform: "capitalize"}}>
-                <Grid item xs={12}> {/*This one was supposed to be an empty cell. But stupid react doesn't render it unless it contains smt. So I placed a dot*/}
-                    .
+                    <Grid item xs={12} style={{paddingTop: "30px"}}>
                 </Grid>
                 <Grid item xs={3} xm={1}>
                     <NavLink to="/Ideas" className="navItem" >
@@ -38,13 +37,13 @@ function NavBar() {
                     </NavLink>
                 </Grid>
                 <Grid item xs={3}>
-                    <NavLink to="/Pictures" className="navItem" >
-                        <Button variant="text"  style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Pictures</Button>
+                    <NavLink to="/Contact" className="navItem">
+                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Contact</Button>
                     </NavLink>
                 </Grid>
                 <Grid item xs={3}>
-                    <NavLink to="/Contact" className="navItem">
-                        <Button variant="text" style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Contact</Button>
+                    <NavLink to="/Pictures" className="navItem" >
+                        <Button variant="text"  style={{fontWeight: "bold",color: "white",fontSize: "1.5rem",textTransform: "capitalize",}}>Pictures</Button>
                     </NavLink>
                 </Grid>
                 <Grid item xs={3}>

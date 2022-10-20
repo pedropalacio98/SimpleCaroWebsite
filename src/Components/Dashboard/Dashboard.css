@@ -1,2 +1,19 @@
-.Dashboard {
+.wave {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(122% + 1.3px);
+    height: 49px;
+}
+
+.wave .shape-fill {
+    fill: white;
 }

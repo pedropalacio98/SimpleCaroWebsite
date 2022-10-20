@@ -1,6 +1,5 @@
 import React from 'react';
 import {motion} from "framer-motion";
-import franchi from "../../franchi.jpeg"
 
 const item = {
     hidden: {
@@ -15,6 +14,8 @@ const item = {
 
 export default function ListItem(props) {
     const first = props.text;
+    const cardText = props.cardText;
+    const img = props.img;
     return (
         <motion.div variants={item}>
             <div className="card" style={{borderRadius: "20px"}}>
@@ -29,12 +30,12 @@ export default function ListItem(props) {
                             mass: "2"
                         },
                     }}
-                    src={franchi} />
+                    src={img!=null?img:""} />
                 <div className="card-body">
                     <div className="card-title text-center text-capitalize" style={{fontFamily: "Roboto"}}>
                         <h3>- {first}</h3>
                     </div>
-                    <p className="card-text text-center fw-bolder">Me gustan las pollas</p>
+                    <p className="card-text text-center fw-bolder">{cardText}</p>
                 </div>
             </div>
         </motion.div>

@@ -1,0 +1,24 @@
+section p{
+    font-family: "Helvetica Neue", serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 40px;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+
+.spacer{
+aspect-ratio: 550/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.layer1{
+    background-image: url("./waves.svg");
+}
